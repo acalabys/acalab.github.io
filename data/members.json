@@ -1,40 +1,75 @@
 {
   "pi": [
     {
-      "name": "Prof. Name",
+      "name": "Seungkyu Choi",
       "role": "Principal Investigator",
       "bio": "Research interests: SoC/FPGA, AI accelerators, memory systems.",
-      "photo": "assets/img/members/prof.jpg",
+      "photo": "assets/img/members/mine.jpg",
       "links": [
         { "label": "Homepage", "href": "#" },
         { "label": "Scholar", "href": "#" },
-        { "label": "ORCID", "href": "#" }
       ]
     }
   ],
   "students": [
     {
-      "name": "Student A",
-      "role": "Ph.D.",
-      "bio": "Topic: LLM acceleration",
-      "photo": "assets/img/members/student-a.jpg",
+      "name": "Seongjoon Cho",
+      "role": "M.S. Candidate",
+      "bio": "Topic: SW-HW Co-Design, RAG acceleration",
+      "photo": "assets/img/members/조성준.jpg",
       "links": []
     },
     {
-      "name": "Student B",
-      "role": "M.S.",
-      "bio": "Topic: Memory/PIM",
-      "photo": "assets/img/members/student-b.jpg",
+      "name": "Minje Park",
+      "role": "M.S. Candidate",
+      "bio": "Topic: Multimodal AI hardware, pruning/sparsity",
+      "photo": "assets/img/members/박민제.jpg",
+      "links": []
+    },
+    {
+      "name": "Junyoung Park",
+      "role": "M.S. Candidate",
+      "bio": "Topic: AI accelerator design, RAG systems",
+      "photo": "assets/img/members/박준영.jpg",
+      "links": []
+    },
+    {
+      "name": "Jiyun Han",
+      "role": "M.S. Candidate",
+      "bio": "Topic: LLM acceleration, KV cache optimization",
+      "photo": "assets/img/members/한지윤.jpg",
+      "links": []
+    },
+    {
+      "name": "Yeonsik Park",
+      "role": "M.S. Candidate",
+      "bio": "Topic: LLM acceleration and quantization",
+      "photo": "assets/img/members/박연식.jpg",
+      "links": []
+    },
+    {
+      "name": "Hyeonseong Kim",
+      "role": "M.S. Candidate",
+      "bio": "Topic: AI accelerator design, LLM acceleration",
+      "photo": "assets/img/members/김현성.jpg",
+      "links": []
+    },
+    {
+      "name": "Myeongjin Kim",
+      "role": "M.S. Candidate",
+      "bio": "Topic: LLM acceleration, SW-HW Co-design",
+      "photo": "assets/img/members/김명진.jpg",
       "links": []
     }
   ],
   "alumni": [
     {
       "name": "Alumni A",
-      "role": "Now at Company/School",
+      "role": "?",
       "bio": "Graduated 202X",
       "photo": "",
       "links": []
     }
   ]
 }
+
