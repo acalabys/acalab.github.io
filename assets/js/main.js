@@ -300,7 +300,7 @@ function renderMembers(members) {
     const body = el("div", "");
     body.appendChild(el("div", "card-title", safeText(m.name)));
     body.appendChild(
-      el("p", "muted", safeText(`${m.role || ""}${m.bio ? " · " + m.bio : ""}`))
+      el("p", "muted", safeText(`${m.role || ""}${m.bio ? "\n" + m.bio : ""}`))
     );
 
     if (Array.isArray(m.links) && m.links.length) {
@@ -613,6 +613,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
