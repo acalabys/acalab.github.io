@@ -270,63 +270,74 @@ function renderMembers(members) {
   const studentGrid = document.getElementById("studentGrid");
   const alumniGrid = document.getElementById("alumniGrid");
 
-  const renderCard = (m) => {
-  const roleClass = (m.role || "").toLowerCase().includes("Principal Investigator")
-  ? "member-pi"
-  : (m.role || "").toLowerCase().includes("M.S. Candidate")
-    ? "member-student"
-    : "member-alumni";
-  const card = el("article", `member card glass ${roleClass}`);
+  // type: "pi" | "student" | "alumni"
+  const renderCard = (m, type) => {
+    const roleClass = `member-${type}`;
+    const card = el("article", `member card glass ${roleClass}`);
 
-  // photo or fallback avatar
-  let left = null;
-  if (!card.classList.contains("member-alumni")) {
-    if (m.photo && String(m.photo).trim().length > 0) {
-      const img = document.createElement("img");
-      img.className = "avatar-img";
-      img.src = m.photo;
-      img.alt = `${m.name || "Member"} photo`;
-      img.loading = "lazy";
-      left = img;
-    } else {
-      const avatar = el("div", "avatar");
-      avatar.textContent = (m.name || "M").trim().slice(0, 2).toUpperCase();
-      left = avatar;
+    // Left avatar/photo (alumni - no)
+    if (type !== "alumni") {
+      let left = null;
+
+      if (m.photo && String(m.photo).trim().length > 0) {
+        const img = document.createElement("img");
+        img.className = "avatar-img";
+        img.src = m.photo;
+        img.alt = `${m.name || "Member"} photo`;
+        img.loading = "lazy";
+        img.decoding = "async";
+        left = img;
+      } else {
+        const avatar = el("div", "avatar");
+        avatar.textContent = (m.name || "M").trim().slice(0, 2).toUpperCase();
+        left = avatar;
+      }
+
+      card.appendChild(left);
     }
-  }
-  if (left) card.appendChild(left);
 
-  const body = el("div", "");
-  body.appendChild(el("div", "card-title", safeText(m.name)));
-  body.appendChild(el("p", "muted", safeText(`${m.role || ""}${m.bio ? " · " + m.bio : ""}`)));
+    // Body
+    const body = el("div", "");
+    body.appendChild(el("div", "card-title", safeText(m.name)));
+    body.appendChild(
+      el("p", "muted", safeText(`${m.role || ""}${m.bio ? " · " + m.bio : ""}`))
+    );
 
-  if (Array.isArray(m.links) && m.links.length) {
-    const row = el("div", "link-row");
-    m.links.forEach(l => {
-      const a = el("a", "link", safeText(l.label));
-      a.href = l.href;
-      if (/^https?:\/\//.test(l.href)) { a.target = "_blank"; a.rel = "noopener"; }
-      row.appendChild(a);
-    });
-    body.appendChild(row);
-  }
+    if (Array.isArray(m.links) && m.links.length) {
+      const row = el("div", "link-row");
+      m.links.forEach((l) => {
+        const a = el("a", "link", safeText(l.label));
+        a.href = l.href;
+        if (/^https?:\/\//.test(l.href)) {
+          a.target = "_blank";
+          a.rel = "noopener";
+        }
+        row.appendChild(a);
+      });
+      body.appendChild(row);
+    }
 
-  card.appendChild(left);
-  card.appendChild(body);
-  return card;
+    card.appendChild(body);
+    return card;
   };
 
   if (piGrid) {
     piGrid.innerHTML = "";
-    (members.pi || []).forEach(m => piGrid.appendChild(renderCard(m)));
+    (members.pi || []).forEach((m) => piGrid.appendChild(renderCard(m, "pi")));
   }
+
   if (studentGrid) {
     studentGrid.innerHTML = "";
-    (members.students || []).forEach(m => studentGrid.appendChild(renderCard(m)));
+    (members.students || []).forEach((m) =>
+      studentGrid.appendChild(renderCard(m, "student"))
+    );
   }
+
   if (alumniGrid) {
     alumniGrid.innerHTML = "";
-    (members.alumni || []).forEach(m => alumniGrid.appendChild(renderCard(m)));
+    (members.alumni || []).forEach((m) =>
+      alumniGrid.appendChild(renderCard(m, "alumni"))
+    );
   }
 }
 
@@ -602,6 +613,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
