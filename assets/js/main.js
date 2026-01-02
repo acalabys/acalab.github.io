@@ -131,14 +131,14 @@ function renderNews(news) {
   });
 }
 
-function renderProjects(projects) {
-  const list = document.getElementById("projectsList");
+function renderResearch(research) {
+  const list = document.getElementById("researchList");
   if (!list) return;
 
   // fill tag dropdown
-  const tagSelect = document.getElementById("projectTag");
+  const tagSelect = document.getElementById("researchTag");
   const allTags = new Set();
-  projects.forEach(p => (p.tags || []).forEach(t => allTags.add(t)));
+  research.forEach(p => (p.tags || []).forEach(t => allTags.add(t)));
   if (tagSelect) {
     [...allTags].sort().forEach(t => {
       const opt = document.createElement("option");
@@ -152,7 +152,7 @@ function renderProjects(projects) {
     const qq = (q || "").trim().toLowerCase();
     const tt = (tag || "").trim();
 
-    projects
+    research
       .filter(p => {
         const hay = `${p.title} ${p.summary} ${(p.tags || []).join(" ")}`.toLowerCase();
         const matchQ = !qq || hay.includes(qq);
@@ -182,8 +182,8 @@ function renderProjects(projects) {
       });
   };
 
-  const search = document.getElementById("projectSearch");
-  const tag = document.getElementById("projectTag");
+  const search = document.getElementById("researchSearch");
+  const tag = document.getElementById("researchTag");
   const update = () => render(search?.value, tag?.value);
 
   search?.addEventListener("input", update);
@@ -571,9 +571,9 @@ async function main() {
   } else if (page === "members") {
     const members = await fetchJSON("data/members.json");
     renderMembers(members);
-  } else if (page === "projects") {
-    const projects = await fetchJSON("data/projects.json");
-    renderProjects(projects);
+  } else if (page === "research") {
+    const research = await fetchJSON("data/research.json");
+    renderResearch(research);
   } else if (page === "publications") {
     const pubs = await fetchJSON("data/publications.json");
     renderPublications(pubs);
@@ -595,6 +595,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
