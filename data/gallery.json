@@ -1,0 +1,18 @@
+[
+  {
+    "src": "assets/img/gallery/seminar-2025-11.jpg",
+    "thumb": "assets/img/gallery/seminar-2025-11.jpg",
+    "title": "Weekly Seminar",
+    "desc": "We discussed low-precision formats and memory bottlenecks.",
+    "date": "2025-11",
+    "tags": ["Seminar", "Research"]
+  },
+  {
+    "src": "assets/img/gallery/group-2025.jpg",
+    "thumb": "assets/img/gallery/group-2025.jpg",
+    "title": "Group Photo",
+    "desc": "End-of-year group photo.",
+    "date": "2025-12",
+    "tags": ["People", "Event"]
+  }
+]
