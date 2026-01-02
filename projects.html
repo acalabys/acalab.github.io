@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Digital Systems Lab</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">DSL</span><span class="brand-name">Digital Systems Lab</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">메뉴</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="주요 메뉴">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="members.html">Members</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Projects</h1>
+    <p class="muted">프로젝트를 카드 형태로 정리하세요. (링크/슬라이드/레포지토리 연결 가능)</p>
+
+    <div class="card-list">
+      <article class="card">
+        <div class="card-title">Project A: Low-Precision LLM Inference Accelerator</div>
+        <p class="muted">INT4/INT8, sparsity, KV cache 최적화 등 핵심 기여를 한 줄로 요약.</p>
+        <div class="tag-row">
+          <span class="tag">Hardware</span><span class="tag">LLM</span><span class="tag">FPGA/ASIC</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-title">Project B: Memory-Centric Architecture</div>
+        <p class="muted">HBM/3D-stacked memory, PIM 기반 가속 연구.</p>
+        <div class="tag-row">
+          <span class="tag">Memory</span><span class="tag">PIM</span>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="muted small">© <span id="year"></span> Digital Systems Lab.</div>
+      <div class="footer-links"><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+</body>
+</html>
