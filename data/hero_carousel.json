@@ -1,0 +1,20 @@
+[
+  {
+    "img": "assets/img/gallery/group-2025.jpg",
+    "title": "2025 Group Photo",
+    "caption": "End-of-year group photo. (Dec 2025)",
+    "link": "gallery.html"
+  },
+  {
+    "img": "assets/img/gallery/seminar-2025-11.jpg",
+    "title": "Weekly Seminar",
+    "caption": "Low-precision formats & memory bottlenecks discussion.",
+    "link": "gallery.html"
+  },
+  {
+    "img": "assets/img/gallery/demo-day.jpg",
+    "title": "Demo Day",
+    "caption": "Project demos and poster session.",
+    "link": "projects.html"
+  }
+]
