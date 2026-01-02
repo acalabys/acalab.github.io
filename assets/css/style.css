@@ -292,6 +292,37 @@ h3{margin:0 0 8px; font-size:18px}
   border:1px solid var(--line);
 }
 
+.member-pi .avatar,
+.member-pi .avatar-img{
+  width:216px;
+  height:288px;
+  border-radius:18px;
+}
+
+.member-pi{
+  border-left:4px solid var(--blue);
+  background: linear-gradient(
+    180deg,
+    rgba(37,99,235,.08),
+    rgba(255,255,255,0)
+  );
+}
+
+.member-student .avatar,
+.member-student .avatar-img{
+  width:112px;
+  height:112px;
+  border-radius:16px;
+}
+
+.member-alumni{
+  padding-left:16px; /* 이미지 공간 안 생기게 */
+}
+.member-alumni .card-title{
+  font-weight:800;
+}
+
+
 /* Links */
 .link-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
 .link{
@@ -568,6 +599,7 @@ h3{margin:0 0 8px; font-size:18px}
   border:1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.06);
 }
+
 
 
 
