@@ -11,7 +11,7 @@
   },
   "hero": {
     "cta": [
-      { "label": "Explore Projects", "href": "projects.html", "style": "primary" },
+      { "label": "Explore Projects", "href": "research.html", "style": "primary" },
       { "label": "View Publications", "href": "publications.html", "style": "ghost" }
     ],
     "stats": [
@@ -43,3 +43,4 @@
     { "label": "GitHub", "href": "https://github.com/" }
   ]
 }
+
