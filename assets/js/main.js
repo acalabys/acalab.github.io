@@ -299,9 +299,22 @@ function renderMembers(members) {
     // Body
     const body = el("div", "");
     body.appendChild(el("div", "card-title", safeText(m.name)));
-    body.appendChild(
-      el("p", "muted", safeText(`${m.role || ""}${m.bio ? "\n" + m.bio : ""}`))
-    );
+
+    if (m.role) {
+      const roleLine = document.createElement("div");
+      roleLine.className = "member-role";
+      roleLine.textContent = m.role;   // safeText 말고 textContent
+      body.appendChild(roleLine);
+    }
+    if (m.bio) {
+      const bioLine = document.createElement("p");
+      bioLine.className = "muted member-bio";
+      bioLine.textContent = m.bio;     // \n / • / 공백 들여쓰기 그대로
+      body.appendChild(bioLine);
+    }  
+//    body.appendChild(
+//      el("p", "muted", safeText(`${m.role || ""}${m.bio ? "\n" + m.bio : ""}`))
+//    );
 
     if (Array.isArray(m.links) && m.links.length) {
       const row = el("div", "link-row");
@@ -613,6 +626,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
