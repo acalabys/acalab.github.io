@@ -271,9 +271,9 @@ function renderMembers(members) {
   const alumniGrid = document.getElementById("alumniGrid");
 
   const renderCard = (m) => {
-  const roleClass = (m.role || "").toLowerCase().includes("prof")
+  const roleClass = (m.role || "").toLowerCase().includes("pi")
   ? "member-pi"
-  : (m.role || "").toLowerCase().includes("ph")
+  : (m.role || "").toLowerCase().includes("students")
     ? "member-student"
     : "member-alumni";
   const card = el("article", `member card glass ${roleClass}`);
@@ -602,6 +602,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
