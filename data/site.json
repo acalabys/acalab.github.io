@@ -1,0 +1,45 @@
+{
+  "lab": {
+    "shortName": "DSL",
+    "name": "Digital Systems Lab",
+    "org": "Your University / Department",
+    "kicker": "Next-gen Hardware & Systems",
+    "lead": "We build efficient digital systems — from SoC/FPGA to AI accelerators and memory-centric architectures.",
+    "keywords": ["SoC / FPGA", "AI Accelerator", "Memory System", "Low Precision"],
+    "heroBadge": "Now recruiting",
+    "heroNote": "Edit numbers/contents in JSON — pages update automatically."
+  },
+  "hero": {
+    "cta": [
+      { "label": "Explore Projects", "href": "projects.html", "style": "primary" },
+      { "label": "View Publications", "href": "publications.html", "style": "ghost" }
+    ],
+    "stats": [
+      { "value": "2026", "label": "Since" },
+      { "value": "N+", "label": "Publications" },
+      { "value": "M+", "label": "Members" }
+    ],
+    "highlights": [
+      { "title": "AI Accelerator", "desc": "Low-precision, sparsity, KV-cache, end-to-end efficiency." },
+      { "title": "SoC / FPGA", "desc": "IP design, bus/DMA, verification, rapid prototyping." },
+      { "title": "System Architecture", "desc": "HBM/DRAM, PIM, storage-compute co-design." }
+    ]
+  },
+  "contact": {
+    "addressLines": ["Building, Room", "Street Address", "City, Country"],
+    "email": "lab@example.com",
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/" },
+      { "label": "Google Scholar", "href": "#" }
+    ]
+  },
+  "recruiting": {
+    "title": "Join Us",
+    "body": "We welcome motivated students (MS/PhD/UG). Please email your CV and a brief statement of interest.",
+    "items": ["Areas: SoC/FPGA, AI accelerators, memory systems", "Include: CV, transcript (optional), portfolio (optional)"]
+  },
+  "footerLinks": [
+    { "label": "Contact", "href": "contact.html" },
+    { "label": "GitHub", "href": "https://github.com/" }
+  ]
+}

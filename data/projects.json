@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Low-Precision LLM Inference Accelerator",
+    "summary": "INT4/INT8 + sparsity + KV cache optimization for fast inference.",
+    "tags": ["Hardware", "LLM", "FPGA/ASIC"],
+    "links": [
+      { "label": "Repo", "href": "https://github.com/" },
+      { "label": "Paper", "href": "#" }
+    ]
+  },
+  {
+    "title": "Memory-Centric Architecture for AI",
+    "summary": "HBM/3D-stacked memory and PIM approaches to remove memory bottlenecks.",
+    "tags": ["Memory", "PIM", "Architecture"],
+    "links": [
+      { "label": "Slides", "href": "#" }
+    ]
+  }
+]

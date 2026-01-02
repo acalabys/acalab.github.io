@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Paper Title Goes Here",
+    "venue": "DAC",
+    "year": 2025,
+    "type": "conference",
+    "authors": ["Author A", "Author B", "Your Lab"],
+    "keywords": ["quantization", "accelerator"],
+    "links": {
+      "pdf": "#",
+      "code": "https://github.com/"
+    }
+  },
+  {
+    "title": "Another Paper Title",
+    "venue": "arXiv",
+    "year": 2024,
+    "type": "preprint",
+    "authors": ["Author A", "Author C"],
+    "keywords": ["memory", "pim"],
+    "links": {
+      "pdf": "#"
+    }
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "pi": [
+    {
+      "name": "Prof. Name",
+      "role": "Principal Investigator",
+      "bio": "Research interests: SoC/FPGA, AI accelerators, memory systems.",
+      "links": [
+        { "label": "Homepage", "href": "#" },
+        { "label": "Scholar", "href": "#" },
+        { "label": "ORCID", "href": "#" }
+      ]
+    }
+  ],
+  "students": [
+    { "name": "Student A", "role": "Ph.D.", "bio": "Topic: LLM acceleration", "links": [] },
+    { "name": "Student B", "role": "M.S.", "bio": "Topic: Memory/PIM", "links": [] }
+  ],
+  "alumni": [
+    { "name": "Alumni A", "role": "Now at Company/School", "bio": "Graduated 202X", "links": [] }
+  ]
+}
