@@ -292,15 +292,16 @@ h3{margin:0 0 8px; font-size:18px}
   border:1px solid var(--line);
 }
 
-.member p.muted{
-  white-space: pre-line;
-  padding-left: 0.6em;
-  text-indent: -0.6em;
+.member-role{
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-.member p.muted::first-line{
-  text-indent: 0;
-  padding-left: 0;
+.member-bio{
+  white-space: pre-line;
+  padding-left: 0.8em; 
+  text-indent: -0.8em;  
+  line-height: 1.55;
 }
 
 .member-pi .avatar,
@@ -610,6 +611,7 @@ h3{margin:0 0 8px; font-size:18px}
   border:1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.06);
 }
+
 
 
 
