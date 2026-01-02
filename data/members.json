@@ -4,6 +4,7 @@
       "name": "Prof. Name",
       "role": "Principal Investigator",
       "bio": "Research interests: SoC/FPGA, AI accelerators, memory systems.",
+      "photo": "assets/img/members/prof.jpg",
       "links": [
         { "label": "Homepage", "href": "#" },
         { "label": "Scholar", "href": "#" },
@@ -12,10 +13,28 @@
     }
   ],
   "students": [
-    { "name": "Student A", "role": "Ph.D.", "bio": "Topic: LLM acceleration", "links": [] },
-    { "name": "Student B", "role": "M.S.", "bio": "Topic: Memory/PIM", "links": [] }
+    {
+      "name": "Student A",
+      "role": "Ph.D.",
+      "bio": "Topic: LLM acceleration",
+      "photo": "assets/img/members/student-a.jpg",
+      "links": []
+    },
+    {
+      "name": "Student B",
+      "role": "M.S.",
+      "bio": "Topic: Memory/PIM",
+      "photo": "assets/img/members/student-b.jpg",
+      "links": []
+    }
   ],
   "alumni": [
-    { "name": "Alumni A", "role": "Now at Company/School", "bio": "Graduated 202X", "links": [] }
+    {
+      "name": "Alumni A",
+      "role": "Now at Company/School",
+      "bio": "Graduated 202X",
+      "photo": "",
+      "links": []
+    }
   ]
 }
