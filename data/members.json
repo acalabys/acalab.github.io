@@ -16,60 +16,61 @@
       "name": "Seongjoon Cho",
       "role": "M.S. Candidate",
       "bio": "Topic: SW-HW Co-Design, RAG acceleration",
-      "photo": "assets/img/members/조성준.jpg",
+      "photo": "assets/img/members/sjcho.jpg",
       "links": []
     },
     {
       "name": "Minje Park",
       "role": "M.S. Candidate",
       "bio": "Topic: Multimodal AI hardware, pruning/sparsity",
-      "photo": "assets/img/members/박민제.jpg",
+      "photo": "assets/img/members/mjpark.jpg",
       "links": []
     },
     {
       "name": "Junyoung Park",
       "role": "M.S. Candidate",
       "bio": "Topic: AI accelerator design, RAG systems",
-      "photo": "assets/img/members/박준영.jpg",
+      "photo": "assets/img/members/jypark.jpg",
       "links": []
     },
     {
       "name": "Jiyun Han",
       "role": "M.S. Candidate",
       "bio": "Topic: LLM acceleration, KV cache optimization",
-      "photo": "assets/img/members/한지윤.jpg",
+      "photo": "assets/img/members/jyhan.jpg",
       "links": []
     },
     {
       "name": "Yeonsik Park",
       "role": "M.S. Candidate",
       "bio": "Topic: LLM acceleration and quantization",
-      "photo": "assets/img/members/박연식.jpg",
+      "photo": "assets/img/members/yspark.jpg",
       "links": []
     },
     {
       "name": "Hyeonseong Kim",
       "role": "M.S. Candidate",
       "bio": "Topic: AI accelerator design, LLM acceleration",
-      "photo": "assets/img/members/김현성.jpg",
+      "photo": "assets/img/members/hskim.jpg",
       "links": []
     },
     {
       "name": "Myeongjin Kim",
       "role": "M.S. Candidate",
       "bio": "Topic: LLM acceleration, SW-HW Co-design",
-      "photo": "assets/img/members/김명진.jpg",
+      "photo": "assets/img/members/mjkim.jpg",
       "links": []
     }
   ],
   "alumni": [
     {
       "name": "Alumni A",
-      "role": "?",
+      "role": "dd",
       "bio": "Graduated 202X",
       "photo": "",
       "links": []
     }
   ]
 }
+
 
