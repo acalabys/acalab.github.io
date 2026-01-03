@@ -309,19 +309,15 @@ h3{margin:0 0 8px; font-size:18px}
 }
 
 .pub-year{
-  background: #ffffff;            /* 순백 */
-  border-radius: 16px;
-  border: 1px solid var(--line);
-  box-shadow: 0 6px 18px rgba(15,23,42,.06);
-  padding: 18px 20px 6px;
-  margin-top: 24px;
+  margin-top: 28px;
 }
 
-/* 연도 헤더 */
+/* 연도 줄은 배경 없이 */
 .pub-year-head{
-  padding-bottom: 10px;
-  margin-bottom: 6px;
-  border-bottom: 1px solid var(--line);
+  background: transparent;
+  padding: 0 4px 10px;
+  margin-bottom: 10px;
+  border-bottom: none;
 }
 
 .pub-list{
@@ -763,6 +759,7 @@ h3{margin:0 0 8px; font-size:18px}
   border:1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.06);
 }
+
 
 
 
