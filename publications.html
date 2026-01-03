@@ -7,55 +7,57 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
-<body>
+<body data-page="publications">
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="index.html"><span class="brand-mark">DSL</span><span class="brand-name">Digital Systems Lab</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">메뉴</button>
+      <a class="brand" href="index.html">
+        <span class="brand-mark" id="brandMark">DSL</span>
+        <span class="brand-name" id="brandName">Digital Systems Lab</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
       <nav id="nav-menu" class="nav-menu" aria-label="주요 메뉴">
         <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="members.html">Members</a>
+        <a href="projects.html">Projects</a>
         <a class="active" href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
+        <a href="members.html">Members</a>
         <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container page">
-    <h1>Publications</h1>
-    <p class="muted">연도별/주제별로 정리하면 좋습니다.</p>
-
-    <div class="pub-controls">
-      <input id="pubSearch" class="input" type="search" placeholder="검색: 제목/키워드" />
+    <div class="page-head">
+      <h1>Publications</h1>
+      <p class="muted">연도별로 스크롤되며, International/Domestic 필터와 마크(Top-tier/SCIE Q1 등)를 지원합니다.</p>
     </div>
 
-    <ol id="pubList" class="pub-list">
-      <li class="pub">
-        <div class="pub-title">Paper Title (Conference/Journal, Year)</div>
-        <div class="pub-meta muted">
-          Author A, Author B, <b>Your Lab</b>
-          · <a href="#" target="_blank" rel="noopener">PDF</a>
-          · <a href="#" target="_blank" rel="noopener">Code</a>
-        </div>
-      </li>
-      <li class="pub">
-        <div class="pub-title">Another Paper Title (Venue, Year)</div>
-        <div class="pub-meta muted">Author ... · <a href="#">PDF</a></div>
-      </li>
-    </ol>
+    <div class="filters pub-filters">
+      <div class="seg" id="pubRegion" aria-label="Region filter">
+        <button class="seg-btn active" data-region="">All</button>
+        <button class="seg-btn" data-region="international">International</button>
+        <button class="seg-btn" data-region="domestic">Domestic</button>
+      </div>
+
+      <select id="pubType" class="select" aria-label="Type filter">
+        <option value="">All types</option>
+        <option value="conference">Conference</option>
+        <option value="journal">Journal</option>
+        <option value="workshop">Workshop</option>
+        <option value="poster">Poster</option>
+      </select>
+
+      <input id="pubSearch" class="input" type="search" placeholder="Search: title/authors/venue/year/marks" aria-label="Search publications" />
+    </div>
+
+    <div id="pubContainer"></div>
   </main>
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div class="muted small">© <span id="year"></span> Digital Systems Lab.</div>
-      <div class="footer-links"><a href="contact.html">Contact</a></div>
+      <div class="muted small">© <span id="year"></span> <span id="footerOrg"></span></div>
+      <div class="footer-links" id="footerLinks"></div>
     </div>
   </footer>
 </body>
 </html>
-
-
-
-
