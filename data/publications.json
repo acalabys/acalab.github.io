@@ -6,7 +6,7 @@
     "title": "Efficient KV Cache for LLM Inference",
     "authors": "A. Student, B. Student, Prof. XXX",
     "venue": "DAC",
-    "detail": "Proceedings of the IEEE/ACM International Symposium on Microarchitecture",
+    "detail": "Proceedings of the ACM/IEE Design Automation Conference",
     "marks": ["top-tier", "major"],
     "links": [
       { "label": "PDF", "href": "assets/pubs/meltkv.pdf" },
@@ -40,4 +40,5 @@
     ]
   }
 ]
+
 
