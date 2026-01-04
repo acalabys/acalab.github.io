@@ -424,6 +424,38 @@ h3{margin:0 0 8px; font-size:18px}
   text-decoration:none;
 }
 
+/* venue 옆 mark 배치 */
+.pub-where-row{
+  display:flex;
+  align-items: baseline;
+  gap: 12px;           /* venue와 mark 사이 간격 */
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.mark-row.inline{
+  margin-top: 0;
+}
+
+/* detail 옆 link 배치 */
+.pub-detail-row{
+  display:flex;
+  align-items: baseline;
+  gap: 12px;           /* detail과 link 사이 간격 */
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.pub-links.inline{
+  margin-top: 0;
+}
+
+/* detail이 너무 길면 링크가 아래로 자연스럽게 내려가게 */
+.pub-detail{
+  flex: 1 1 520px;
+  min-width: 280px;
+}
+
 @media (max-width: 860px){
   .pub-card-grid{ grid-template-columns: 1fr; }
 }
@@ -822,6 +854,7 @@ h3{margin:0 0 8px; font-size:18px}
   border:1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.06);
 }
+
 
 
 
