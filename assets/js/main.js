@@ -343,8 +343,8 @@ function renderPublications(itemsRaw) {
         item.appendChild(title);
         item.appendChild(meta);
         
-        item.appendChild(where);
-        if (p.detail) item.appendChild(detail);
+        //item.appendChild(where);
+        //if (p.detail) item.appendChild(detail);
         item.appendChild(whereRow);
         if (detailRow) item.appendChild(detailRow);
         //if (marksRow.childNodes.length) item.appendChild(marksRow);
@@ -779,6 +779,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
