@@ -501,6 +501,50 @@ h3{margin:0 0 8px; font-size:18px}
   font-weight:800;
 }
 
+.alumni-list{
+  list-style:none;
+  padding:0;
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.alumni-item{
+  padding: 14px 6px;
+  border-bottom: 1px solid var(--line);
+}
+
+.alumni-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 14px;
+}
+
+.alumni-name{
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  flex: 0 0 auto;
+}
+
+.alumni-meta{
+  flex: 1 1 auto;
+  white-space: pre-line; /* \n 줄바꿈 */
+  text-align: left;
+}
+
+.alumni-links{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px){
+  .alumni-top{
+    flex-direction: column;
+    gap: 6px;
+  }
+}
 
 /* Links */
 .link-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
@@ -778,6 +822,7 @@ h3{margin:0 0 8px; font-size:18px}
   border:1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.06);
 }
+
 
 
 
