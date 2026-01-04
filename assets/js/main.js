@@ -432,12 +432,11 @@ function renderMembers(members) {
     if (m.email) {
       const emailRow = document.createElement("div");
       emailRow.className = "member-email";
-      //If email link
-      //const a = document.createElement("a");
-      //a.className = "email-link";
-      //a.href = `mailto:${m.email}`;
-      //a.textContent = m.email;
-      //emailRow.appendChild(a);
+      const a = document.createElement("a");
+      //a.className = "email-link"; //If email link
+      //a.href = `mailto:${m.email}`; //If email link
+      a.textContent = m.email;
+      emailRow.appendChild(a);
       body.appendChild(emailRow);
     }
 //    body.appendChild(
@@ -790,6 +789,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
