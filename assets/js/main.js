@@ -428,7 +428,18 @@ function renderMembers(members) {
       bioLine.className = "muted member-bio";
       bioLine.textContent = m.bio;     // \n / • / 공백 들여쓰기 그대로
       body.appendChild(bioLine);
-    }  
+    }
+    if (m.email) {
+      const emailRow = document.createElement("div");
+      emailRow.className = "member-email";
+      //email link
+      //const a = document.createElement("a");
+      //a.className = "email-link";
+      //a.href = `mailto:${m.email}`;
+      //a.textContent = m.email;
+      emailRow.appendChild(a);
+      body.appendChild(emailRow);
+    }
 //    body.appendChild(
 //      el("p", "muted", safeText(`${m.role || ""}${m.bio ? "\n" + m.bio : ""}`))
 //    );
@@ -779,6 +790,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
