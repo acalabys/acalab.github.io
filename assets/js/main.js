@@ -296,24 +296,26 @@ function renderPublications(itemsRaw) {
           p.type ? `(${p.type})` : "",
           p.region ? `· ${p.region}` : ""
         ].filter(Boolean).join(" ");
-      
-        const detail = document.createElement("div");
-        detail.className = "pub-detail";
-        detail.textContent = p.detail || "";
-      
-        // marks
+        
+        // marks (venue 옆으로)
         const marksRow = document.createElement("div");
-        marksRow.className = "mark-row";
+        marksRow.className = "mark-row inline";
         (p.marks || []).forEach(mk => {
           const span = document.createElement("span");
           span.className = `mark mark-${mk}`;
-          span.textContent = mk.replace("-", " ").toUpperCase();
+          span.textContent = (MARK_LABEL && MARK_LABEL[mk]) ? MARK_LABEL[mk] : mk; // MARK_LABEL 쓰는 버전이면 유지
           marksRow.appendChild(span);
         });
-      
-        // links
+        
+        // venue + marks row
+        const whereRow = document.createElement("div");
+        whereRow.className = "pub-where-row";
+        whereRow.appendChild(where);
+        if (marksRow.childNodes.length) whereRow.appendChild(marksRow);
+        
+        // links (detail 옆으로)
         const linksRow = document.createElement("div");
-        linksRow.className = "pub-links";
+        linksRow.className = "pub-links inline";
         (p.links || []).forEach(l => {
           const a = document.createElement("a");
           a.className = "pub-link";
@@ -322,13 +324,31 @@ function renderPublications(itemsRaw) {
           if (/^https?:\/\//.test(a.href)) { a.target = "_blank"; a.rel = "noopener"; }
           linksRow.appendChild(a);
         });
+        
+        // detail + links row
+        let detailRow = null;
+        if (p.detail || linksRow.childNodes.length) {
+          detailRow = document.createElement("div");
+          detailRow.className = "pub-detail-row";
+        
+          if (p.detail) {
+            const detail = document.createElement("div");
+            detail.className = "pub-detail";
+            detail.textContent = p.detail;
+            detailRow.appendChild(detail);
+          }
+          if (linksRow.childNodes.length) detailRow.appendChild(linksRow);
+        }
       
         item.appendChild(title);
         item.appendChild(meta);
+        
         item.appendChild(where);
         if (p.detail) item.appendChild(detail);
-        if (marksRow.childNodes.length) item.appendChild(marksRow);
-        if (linksRow.childNodes.length) item.appendChild(linksRow);
+        item.appendChild(whereRow);
+        if (detailRow) item.appendChild(detailRow);
+        //if (marksRow.childNodes.length) item.appendChild(marksRow);
+        //if (linksRow.childNodes.length) item.appendChild(linksRow);
       
         list.appendChild(item);
       });
@@ -759,6 +779,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
