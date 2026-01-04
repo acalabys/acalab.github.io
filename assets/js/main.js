@@ -445,9 +445,45 @@ function renderMembers(members) {
 
   if (alumniGrid) {
     alumniGrid.innerHTML = "";
-    (members.alumni || []).forEach((m) =>
-      alumniGrid.appendChild(renderCard(m, "alumni"))
-    );
+    (members.alumni || []).forEach((m) => {
+      const li = document.createElement("li");
+      li.className = "alumni-item";
+  
+      const top = document.createElement("div");
+      top.className = "alumni-top";
+  
+      const name = document.createElement("div");
+      name.className = "alumni-name";
+      name.textContent = m.name || "";
+  
+      const meta = document.createElement("div");
+      meta.className = "alumni-meta muted";
+      // role / bio는 줄바꿈 허용 (bio에 \n, • 등 사용 가능)
+      meta.textContent = `${m.role || ""}${m.bio ? "\n" + m.bio : ""}`;
+  
+      top.appendChild(name);
+      top.appendChild(meta);
+      li.appendChild(top);
+  
+      if (Array.isArray(m.links) && m.links.length) {
+        const row = document.createElement("div");
+        row.className = "alumni-links";
+        m.links.forEach((l) => {
+          const a = document.createElement("a");
+          a.className = "pub-link"; // 기존 링크 pill 스타일 재사용 원하면
+          a.textContent = l.label || "Link";
+          a.href = l.href || "#";
+          if (/^https?:\/\//.test(a.href)) {
+            a.target = "_blank";
+            a.rel = "noopener";
+          }
+          row.appendChild(a);
+        });
+        li.appendChild(row);
+      }
+  
+      alumniGrid.appendChild(li);
+    });
   }
 }
 
@@ -723,6 +759,7 @@ main().catch((e) => {
     mainEl.prepend(err);
   }
 });
+
 
 
 
