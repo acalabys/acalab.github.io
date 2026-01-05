@@ -472,6 +472,12 @@ h3{margin:0 0 8px; font-size:18px}
   padding:16px;
 }
 
+.members-sections{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;     /* 섹션 사이 간격 */
+}
+
 .avatar{
   width:48px;
   height:48px;
@@ -974,6 +980,7 @@ h3{margin:0 0 8px; font-size:18px}
   border:1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.06);
 }
+
 
 
 
