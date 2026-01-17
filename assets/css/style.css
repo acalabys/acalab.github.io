@@ -359,7 +359,7 @@ h3{margin:0 0 8px; font-size:18px}
 
 .pub-meta{
   margin-top: 6px;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
 }
 
@@ -370,13 +370,14 @@ h3{margin:0 0 8px; font-size:18px}
 }
 
 .pub-where{
+  color: #374151; 
   margin-top: 6px;
   font-weight: 700;
 }
 
 .pub-detail{
   margin-top: 6px;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
 }
 
@@ -1136,6 +1137,7 @@ h3{margin:0 0 8px; font-size:18px}
     min-height: 200px;
   }
 }
+
 
 
 
