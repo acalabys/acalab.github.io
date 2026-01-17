@@ -20,7 +20,7 @@
     "authors": "Minje Park, Yeonsik Park, and Seungkyu Choi",
     "venue": "JSA",
     "detail": "Journal of Systems Architecture",
-    "marks": ["scie"],
+    "marks": ["scie-q1"],
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1016/j.sysarc.2025.103535" }
     ]
@@ -286,6 +286,7 @@
     ]
   }
 ]
+
 
 
 
