@@ -371,6 +371,7 @@ h3{margin:0 0 8px; font-size:18px}
 
 .pub-detail{
   margin-top: 6px;
+  font-style: italic;
   font-size: 15px;
   color: var(--muted);
 }
@@ -1131,6 +1132,7 @@ h3{margin:0 0 8px; font-size:18px}
     min-height: 200px;
   }
 }
+
 
 
 
