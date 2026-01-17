@@ -1034,6 +1034,10 @@ h3{margin:0 0 8px; font-size:18px}
   grid-template-columns: 1fr 1fr; /* 50:50 */
 }
 
+.split-8-2{
+  grid-template-columns: 4fr 1fr; /* 80:20 */
+}
+
 .split-media{
   border-radius: 16px;
   overflow: hidden;
@@ -1093,7 +1097,7 @@ h3{margin:0 0 8px; font-size:18px}
 
 /* Responsive */
 @media (max-width: 980px){
-  .split-6-4, .split-5-5{
+  .split-6-4, .split-5-5, .split-8-2{
     grid-template-columns: 1fr;
   }
   .reverse-on-desktop .split-media,
@@ -1104,6 +1108,7 @@ h3{margin:0 0 8px; font-size:18px}
     min-height: 200px;
   }
 }
+
 
 
 
