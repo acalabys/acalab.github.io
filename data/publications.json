@@ -11,7 +11,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/TC.2025.3644935" }
     ]
-  }
+  },
   {
     "year": 2025,
     "region": "international",
@@ -24,7 +24,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1016/j.sysarc.2025.103535" }
     ]
-  }
+  },
   {
     "year": 2025,
     "region": "international",
@@ -37,7 +37,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/DAC63849.2025.11133184" }
     ]
-  }
+  },
   {
     "year": 2024,
     "region": "international",
@@ -50,7 +50,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/TETC.2024.3486348" }
     ]
-  }
+  },
   {
     "year": 2024,
     "region": "international",
@@ -63,7 +63,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/LSSC.2024.3486234" }
     ]
-  }
+  },
   {
     "year": 2024,
     "region": "international",
@@ -76,7 +76,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1145/3665314.3673174" }
     ]
-  }
+  },
   {
     "year": 2024,
     "region": "international",
@@ -89,7 +89,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1145/3649329.3655907" }
     ]
-  }
+  },
   {
     "year": 2023,
     "region": "international",
@@ -102,7 +102,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1145/3489517.3530455" }
     ]
-  }
+  },
   {
     "year": 2023,
     "region": "international",
@@ -115,7 +115,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/TCAD.2022.3206394" }
     ]
-  }
+  },
   {
     "year": 2023,
     "region": "international",
@@ -128,7 +128,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/TCAD.2022.3170845" }
     ]
-  }
+  },
   {
     "year": 2022,
     "region": "international",
@@ -141,7 +141,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1145/3489517.3530455" }
     ]
-  }
+  },
   {
     "year": 2022,
     "region": "international",
@@ -154,7 +154,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/TC.2021.3078316" }
     ]
-  }
+  },
   {
     "year": 2022,
     "region": "international",
@@ -167,7 +167,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/TC.2021.3063269" }
     ]
-  }
+  },
   {
     "year": 2021,
     "region": "international",
@@ -180,7 +180,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/ICCAD51958.2021.9643522" }
     ]
-  }
+  },
   {
     "year": 2020,
     "region": "international",
@@ -193,7 +193,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/JSSC.2020.3005786" }
     ]
-  }
+  },
   {
     "year": 2020,
     "region": "international",
@@ -206,7 +206,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/DAC18072.2020.9218507" }
     ]
-  }
+  },
   {
     "year": 2019,
     "region": "international",
@@ -219,7 +219,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/A-SSCC47793.2019.9056972" }
     ]
-  }
+  },
   {
     "year": 2019,
     "region": "international",
@@ -232,7 +232,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/ISLPED.2019.8824855" }
     ]
-  }
+  },
   {
     "year": 2019,
     "region": "international",
@@ -245,7 +245,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1145/3316781.3317769" }
     ]
-  }
+  },
   {
     "year": 2018,
     "region": "international",
@@ -258,7 +258,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1145/3218603.3218625" }
     ]
-  }
+  },
   {
     "year": 2017,
     "region": "international",
@@ -271,7 +271,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/TCSII.2017.2691771" }
     ]
-  }
+  },
   {
     "year": 2017,
     "region": "international",
@@ -284,7 +284,7 @@
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/ISLPED.2017.8009174" }
     ]
-  }
+  },
   {
     "year": 2025,
     "region": "international",
@@ -326,6 +326,7 @@
     ]
   }
 ]
+
 
 
 
