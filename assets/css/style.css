@@ -1073,7 +1073,7 @@ h3{margin:0 0 8px; font-size:18px}
   background: transparent; /* 필요하면 #fff */
 }
 
-.split-6-4 media img{
+.split-6-4 .split-media img{
   width: 80%;
   height: 80%;
   min-height: 160px;
@@ -1136,6 +1136,7 @@ h3{margin:0 0 8px; font-size:18px}
     min-height: 200px;
   }
 }
+
 
 
 
