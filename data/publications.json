@@ -4,7 +4,7 @@
     "region": "international",
     "type": "journal",
     "title": "Q-VESA: Accelerating Quantization-Aware Vector Search for Fast Retrieval in Prompt Engineering",
-    "authors": "eongjoon Cho, Junyoung Park, Donghyun Kang, Moohyeon Nam, Hongchan Roh, Moo-Kyoung Chung, Se-Hyun Yang, and Seungkyu Choi",
+    "authors": "Seongjoon Cho, Junyoung Park, Donghyun Kang, Moohyeon Nam, Hongchan Roh, Moo-Kyoung Chung, Se-Hyun Yang, and Seungkyu Choi",
     "venue": "TC",
     "detail": "IEEE Transactions on Computers",
     "marks": ["top-tier", "scie"],
@@ -286,6 +286,7 @@
     ]
   }
 ]
+
 
 
 
