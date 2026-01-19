@@ -129,6 +129,7 @@ a:hover{text-decoration:underline}
   align-items:center;
 }
 .nav-menu a{
+  font-weight: 800; 
   padding:10px 12px;
   border-radius:12px;
   color:rgba(255,255,255,.78);
@@ -1132,6 +1133,7 @@ h3{margin:0 0 8px; font-size:18px}
     min-height: 200px;
   }
 }
+
 
 
 
